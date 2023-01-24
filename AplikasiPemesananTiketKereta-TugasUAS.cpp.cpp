@@ -267,7 +267,7 @@ jam dt1,dt2,dt3;
 
     for (int a=0;a<=1;a++){
         cout << a+1 << "   Kelas Kereta Api   : " << kelas_kereta [a] << endl;
-        cout << "    Peron              : " << peron [1] << endl;
+        cout << "    Peron              : " << peron_pilih << endl;
         cout << "    Jam Keberangkatan  : " << jam_berangkat << endl;
         cout << "    Tarif              : " << tarif_kota_c [a] << endl;
         if (a==0){
@@ -432,7 +432,7 @@ jam dt1,dt2,dt3;
 
     for (int a=0;a<=1;a++){
         cout << a+1 << "   Kelas Kereta Api   : " << kelas_kereta [a] << endl;
-        cout << "    Peron              : " << peron [0] << endl;
+        cout << "    Peron              : " << peron_pilih << endl;
         cout << "    Jam Keberangkatan  : " << jam_berangkat << endl;
         cout << "    Tarif              : " << tarif_kota_d [a] << endl;
 
