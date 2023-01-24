@@ -72,17 +72,20 @@ jam dt1,dt2,dt3;
 
     if (pilih_stasiun=='1'){
         jam_berangkat = dt1.jam_kota_AB;
+        peron_pilih   = peron [0];
     }
     else if (pilih_stasiun=='2'){
         jam_berangkat = dt2.jam_kota_AB;
+        peron_pilih   = peron [1];
     }
     else if (pilih_stasiun=='3'){
         jam_berangkat = dt3.jam_kota_AB;
+        peron_pilih   = peron [2];
     }
 
     for (int a=0;a<=1;a++){
         cout << a+1 << "   Kelas Kereta Api   : " << kelas_kereta [a] << endl;
-        cout << "    Peron              : " << peron [0] << endl;
+        cout << "    Peron              : " << peron_pilih << endl;
         cout << "    Jam Keberangkatan  : " << jam_berangkat << endl;
         cout << "    Tarif              : " << tarif_kota_b [a] << endl;
         if (a==0){
@@ -251,12 +254,15 @@ jam dt1,dt2,dt3;
 
     if (pilih_stasiun=='1'){
         jam_berangkat = dt1.jam_kota_AC;
+        peron_pilih   = peron [0];
     }
     else if (pilih_stasiun=='2'){
         jam_berangkat = dt2.jam_kota_AC;
+        peron_pilih   = peron [1];
     }
     else if (pilih_stasiun=='3'){
         jam_berangkat = dt3.jam_kota_AC;
+        peron_pilih   = peron [2];
     }
 
     for (int a=0;a<=1;a++){
@@ -413,12 +419,15 @@ jam dt1,dt2,dt3;
 
     if (pilih_stasiun=='1'){
         jam_berangkat = dt1.jam_kota_BC;
+        peron_pilih   = peron [0];
     }
     else if (pilih_stasiun=='2'){
         jam_berangkat = dt2.jam_kota_BC;
+        peron_pilih   = peron [1];
     }
     else if (pilih_stasiun=='3'){
         jam_berangkat = dt3.jam_kota_BC;
+        peron_pilih   = peron [2];
     }
 
     for (int a=0;a<=1;a++){
