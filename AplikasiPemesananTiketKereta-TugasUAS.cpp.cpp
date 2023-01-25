@@ -7,7 +7,6 @@ using namespace std;
     Universitas Muhammadiyah Sukabumi
 */
 
-
 struct jam {
     string jam_kota_AB, jam_kota_AC, jam_kota_BC;
 };
@@ -23,7 +22,7 @@ int tarif_kota_c [2] = {70000,45000};
 int tarif_kota_d [2] = {50000,30000};
 
 string tgl, nama, no_hp, nik_paspor, jurusan_kereta, peron_pilih, jam_keberangkatan, kelas_KA, jam_berangkat, nama_kereta;
-char jurusan,pilih_kereta, pilih_kelas, tambah, cetak;
+char jurusan, pilih_kereta, pilih_kelas, tambah, cetak;
 int dewasa, bayi, tarif, jmlh_penumpang, jmlh_bayar;
 
 //FUNGSI MENU UTAMA
@@ -170,8 +169,6 @@ jam dt1,dt2,dt3;
     dt2.jam_kota_AB = "07.38";
     dt3.jam_kota_AB = "08.10";
 
-    string stasiun_kereta,jam_keberangkatan;
-
     cout << "\t\t\t\t\t\t=====TIKET KERETA API=====\n";
     cout << "\n";
     cout << "\t===============================================\n";
@@ -194,16 +191,12 @@ jam dt1,dt2,dt3;
 
     if (pilih_kereta=='1'){
         nama_kereta         = KA [0];
-        jam_keberangkatan   = dt1.jam_kota_AB;
-
     }
     else if (pilih_kereta=='2'){
         nama_kereta         = KA[1];
-        jam_keberangkatan   = dt2.jam_kota_AB;
     }
     else if (pilih_kereta=='3'){
         nama_kereta         = KA [2];
-        jam_keberangkatan   = dt3.jam_kota_AB;
     }
     cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
@@ -323,8 +316,6 @@ jam dt1,dt2,dt3;
     dt2.jam_kota_AC = "06.40";
     dt3.jam_kota_AC = "07.30";
 
-    string stasiun_kereta,jam_keberangkatan;
-
     cout << "t\t\t\t\t\t=====TIKET KERETA API=====\n";
     cout << "\n";
     cout << "\t===============================================\n";
@@ -347,15 +338,12 @@ jam dt1,dt2,dt3;
 
     if (pilih_kereta=='1'){
         nama_kereta         = KA [0];
-        jam_keberangkatan   = dt1.jam_kota_AC;
     }
     else if (pilih_kereta=='2'){
         nama_kereta         = KA[1];
-        jam_keberangkatan   = dt2.jam_kota_AC;
     }
     else if (pilih_kereta=='3'){
         nama_kereta         = KA [2];
-        jam_keberangkatan   = dt3.jam_kota_AC;
     }
     cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
@@ -475,8 +463,6 @@ jam dt1,dt2,dt3;
     dt2.jam_kota_BC = "06.40";
     dt3.jam_kota_BC = "07.10";
 
-    string stasiun_kereta,jam_keberangkatan;
-
     cout << "\t\t\t\t\t\t=====TIKET KERETA API=====\n";
     cout << "\n";
     cout << "\t===============================================\n";
@@ -499,15 +485,12 @@ jam dt1,dt2,dt3;
 
     if (pilih_kereta=='1'){
         nama_kereta         = KA [0];
-        jam_keberangkatan   = dt1.jam_kota_BC;
     }
     else if (pilih_kereta=='2'){
         nama_kereta         = KA[1];
-        jam_keberangkatan   = dt2.jam_kota_BC;
     }
     else if (pilih_kereta=='3'){
         nama_kereta         = KA [2];
-        jam_keberangkatan   = dt3.jam_kota_BC;
     }
     cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
