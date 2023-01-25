@@ -1,5 +1,12 @@
 #include <iostream>
 using namespace std;
+/*
+    Nama        : Eneng Rahayu
+    Prodi       : Teknik Informatika
+    Kelas       : Semester 1 A
+    Universitas Muhammadiyah Sukabumi
+*/
+
 
 struct jam {
     string jam_kota_AB, jam_kota_AC, jam_kota_BC;
@@ -15,8 +22,8 @@ int tarif_kota_b [2] = {80000,60000};
 int tarif_kota_c [2] = {70000,45000};
 int tarif_kota_d [2] = {50000,30000};
 
-string tgl, nama, no_hp, nik_paspor, jurusan_kereta, peron_pilih, jam_keberangkatan, kelas_KA, jam_berangkat;
-char jurusan, pilih_stasiun, pilih_kelas, tambah, cetak;
+string tgl, nama, no_hp, nik_paspor, jurusan_kereta, peron_pilih, jam_keberangkatan, kelas_KA, jam_berangkat, nama_kereta;
+char jurusan,pilih_kereta, pilih_kelas, tambah, cetak;
 int dewasa, bayi, tarif, jmlh_penumpang, jmlh_bayar;
 
 //FUNGSI MENU UTAMA
@@ -57,7 +64,7 @@ jam dt1,dt2,dt3;
     cout << "[3] " << KA [2] <<" \t" << dt3.jam_kota_AB << "\t\t" << peron [2] << endl;
     cout << "=============================================\n";
     cout << "Pilih Kereta      : ";
-    cin >> pilih_stasiun;
+    cin >> pilih_kereta;
     system("cls");
 }
 
@@ -70,15 +77,15 @@ jam dt1,dt2,dt3;
     cout << "\t\t\t\t\t=====PILIH KELAS KERETA=====\n";
     cout << endl;
 
-    if (pilih_stasiun=='1'){
+    if (pilih_kereta=='1'){
         jam_berangkat = dt1.jam_kota_AB;
         peron_pilih   = peron [0];
     }
-    else if (pilih_stasiun=='2'){
+    else if (pilih_kereta=='2'){
         jam_berangkat = dt2.jam_kota_AB;
         peron_pilih   = peron [1];
     }
-    else if (pilih_stasiun=='3'){
+    else if (pilih_kereta=='3'){
         jam_berangkat = dt3.jam_kota_AB;
         peron_pilih   = peron [2];
     }
@@ -185,31 +192,21 @@ jam dt1,dt2,dt3;
     }
     cout << "\tJurusan kereta/train direction           : " << jurusan_kereta << endl;
 
-    if (pilih_stasiun=='1'){
-        stasiun_kereta = KA [0];
-        jam_keberangkatan = dt1.jam_kota_AB;
-    }
-    else if (pilih_kelas=='2'){
-        stasiun_kereta = KA[1];
-        jam_keberangkatan = dt2.jam_kota_AB;
-    }
-    else if (pilih_kelas=='3'){
-        stasiun_kereta = KA [2];
-        jam_keberangkatan = dt3.jam_kota_AB;
-    }
-    cout << "\tNama kereta/train name                   : " << stasiun_kereta << endl;
+    if (pilih_kereta=='1'){
+        nama_kereta         = KA [0];
+        jam_keberangkatan   = dt1.jam_kota_AB;
 
-    if (pilih_stasiun=='1'){
-        peron_pilih = peron[0];
     }
-    else if (pilih_stasiun=='2'){
-        peron_pilih = peron[1];
+    else if (pilih_kereta=='2'){
+        nama_kereta         = KA[1];
+        jam_keberangkatan   = dt2.jam_kota_AB;
     }
-    else if (pilih_stasiun=='3'){
-        peron_pilih = peron[2];
+    else if (pilih_kereta=='3'){
+        nama_kereta         = KA [2];
+        jam_keberangkatan   = dt3.jam_kota_AB;
     }
+    cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
-
     cout << "\tJam Keberangkatan/hours of derparture    : " << jam_keberangkatan << endl;
     cout << "\tJumlah Penumpang/total passenger         : " << jmlh_penumpang << endl;
     cout << "\tTotal Pembayaran/total payment           : " << jmlh_bayar << endl;
@@ -239,7 +236,7 @@ jam dt1,dt2,dt3;
     cout << "[3] " << KA [2] <<" \t" << dt3.jam_kota_AC << "\t\t" << peron [2] << endl;
     cout << "=============================================\n";
     cout << "Pilih Kereta      : ";
-    cin >> pilih_stasiun;
+    cin >> pilih_kereta;
     system("cls");
 }
 
@@ -252,15 +249,15 @@ jam dt1,dt2,dt3;
     cout << "\t\t\t\t\t=====PILIH KELAS KERETA=====\n";
     cout << endl;
 
-    if (pilih_stasiun=='1'){
+    if (pilih_kereta=='1'){
         jam_berangkat = dt1.jam_kota_AC;
         peron_pilih   = peron [0];
     }
-    else if (pilih_stasiun=='2'){
+    else if (pilih_kereta=='2'){
         jam_berangkat = dt2.jam_kota_AC;
         peron_pilih   = peron [1];
     }
-    else if (pilih_stasiun=='3'){
+    else if (pilih_kereta=='3'){
         jam_berangkat = dt3.jam_kota_AC;
         peron_pilih   = peron [2];
     }
@@ -348,30 +345,19 @@ jam dt1,dt2,dt3;
     }
     cout << "\tJurusan kereta/train direction           : " << jurusan_kereta << endl;
 
-    if (pilih_stasiun=='1'){
-        stasiun_kereta = KA [0];
-        jam_keberangkatan = dt1.jam_kota_AC;
+    if (pilih_kereta=='1'){
+        nama_kereta         = KA [0];
+        jam_keberangkatan   = dt1.jam_kota_AC;
     }
-    else if (pilih_kelas=='2'){
-        stasiun_kereta = KA[1];
-        jam_keberangkatan = dt2.jam_kota_AC;
+    else if (pilih_kereta=='2'){
+        nama_kereta         = KA[1];
+        jam_keberangkatan   = dt2.jam_kota_AC;
     }
-    else if (pilih_kelas=='3'){
-        stasiun_kereta = KA [2];
-        jam_keberangkatan = dt3.jam_kota_AC;
+    else if (pilih_kereta=='3'){
+        nama_kereta         = KA [2];
+        jam_keberangkatan   = dt3.jam_kota_AC;
     }
-    cout << "\tNama kereta/train name                   : " << stasiun_kereta << endl;
-
-    if (pilih_stasiun=='1'){
-        peron_pilih = peron[0];
-    }
-    else if (pilih_stasiun=='2'){
-        peron_pilih = peron[1];
-    }
-    else if (pilih_stasiun=='3'){
-        peron_pilih = peron[2];
-    }
-
+    cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
     cout << "\tJam Keberangkatan/hours of derparture    : " << jam_keberangkatan << endl;
     cout << "\tJumlah Penumpang/total passenger         : " << jmlh_penumpang << endl;
@@ -404,7 +390,7 @@ jam dt1,dt2,dt3;
     cout << "=============================================\n";
 
     cout << "Pilih Kereta      : ";
-    cin >> pilih_stasiun;
+    cin >> pilih_kereta;
     system("cls");
 }
 
@@ -417,15 +403,15 @@ jam dt1,dt2,dt3;
     cout << "\t\t\t\t\t=====PILIH KELAS KERETA=====\n";
     cout << endl;
 
-    if (pilih_stasiun=='1'){
+    if (pilih_kereta=='1'){
         jam_berangkat = dt1.jam_kota_BC;
         peron_pilih   = peron [0];
     }
-    else if (pilih_stasiun=='2'){
+    else if (pilih_kereta=='2'){
         jam_berangkat = dt2.jam_kota_BC;
         peron_pilih   = peron [1];
     }
-    else if (pilih_stasiun=='3'){
+    else if (pilih_kereta=='3'){
         jam_berangkat = dt3.jam_kota_BC;
         peron_pilih   = peron [2];
     }
@@ -511,30 +497,19 @@ jam dt1,dt2,dt3;
     }
     cout << "\tJurusan kereta/train direction           : " << jurusan_kereta << endl;
 
-    if (pilih_stasiun=='1'){
-        stasiun_kereta = KA [0];
-        jam_keberangkatan = dt1.jam_kota_BC;
+    if (pilih_kereta=='1'){
+        nama_kereta         = KA [0];
+        jam_keberangkatan   = dt1.jam_kota_BC;
     }
-    else if (pilih_kelas=='2'){
-        stasiun_kereta = KA[1];
-        jam_keberangkatan = dt2.jam_kota_BC;
+    else if (pilih_kereta=='2'){
+        nama_kereta         = KA[1];
+        jam_keberangkatan   = dt2.jam_kota_BC;
     }
-    else if (pilih_kelas=='3'){
-        stasiun_kereta = KA [2];
-        jam_keberangkatan = dt3.jam_kota_BC;
+    else if (pilih_kereta=='3'){
+        nama_kereta         = KA [2];
+        jam_keberangkatan   = dt3.jam_kota_BC;
     }
-    cout << "\tNama kereta/train name                   : " << stasiun_kereta << endl;
-
-    if (pilih_stasiun=='1'){
-        peron_pilih = peron[0];
-    }
-    else if (pilih_stasiun=='2'){
-        peron_pilih = peron[1];
-    }
-    else if (pilih_stasiun=='3'){
-        peron_pilih = peron[2];
-    }
-
+    cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
     cout << "\tJam Keberangkatan/hours of derparture    : " << jam_keberangkatan << endl;
     cout << "\tJumlah Penumpang/total passenger         : " << jmlh_penumpang << endl;
@@ -562,13 +537,12 @@ void penutup (){
     cout << "\t\t\t\t======================================================\n";
 }
 
-
 int main (){
     menu_utama();
 //KOTA AB
     if (jurusan=='1'){
         jurusan_kota_AB();
-        if (pilih_stasiun=='1'||'2'||'3'){
+        if (pilih_kereta=='1'||'2'||'3'){
             kelas_KA_kota_AB ();
             penumpang_jurusan_kota_AB ();
             for (int a=1;a<=jmlh_penumpang;a++){
@@ -582,7 +556,7 @@ int main (){
 //KOTA AC
     else if (jurusan=='2'){
         jurusan_kota_AC ();
-        if (pilih_stasiun=='1'||'2'||'3'){
+        if (pilih_kereta=='1'||'2'||'3'){
             kelas_KA_kota_AC ();
             penumpang_jurusan_kota_AC ();
             for (int a=1;a<=jmlh_penumpang;a++){
@@ -596,7 +570,7 @@ int main (){
 //KOTA BC
     else if (jurusan=='3'){
         jurusan_kota_BC ();
-        if (pilih_stasiun=='1'||'2'||'3'){
+        if (pilih_kereta=='1'||'2'||'3'){
             kelas_KA_kota_BC ();
             penumpang_jurusan_kota_BC ();
             for (int a=1;a<=jmlh_penumpang;a++){
