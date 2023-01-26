@@ -200,7 +200,7 @@ jam dt1,dt2,dt3;
     }
     cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
-    cout << "\tJam Keberangkatan/hours of derparture    : " << jam_keberangkatan << endl;
+    cout << "\tJam Keberangkatan/hours of derparture    : " << jam_berangkat << endl;
     cout << "\tJumlah Penumpang/total passenger         : " << jmlh_penumpang << endl;
     cout << "\tTotal Pembayaran/total payment           : " << jmlh_bayar << endl;
     cout << endl;
@@ -347,7 +347,7 @@ jam dt1,dt2,dt3;
     }
     cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
-    cout << "\tJam Keberangkatan/hours of derparture    : " << jam_keberangkatan << endl;
+    cout << "\tJam Keberangkatan/hours of derparture    : " << jam_berangkat << endl;
     cout << "\tJumlah Penumpang/total passenger         : " << jmlh_penumpang << endl;
     cout << "\tTotal Pembayaran/total payment           : " << jmlh_bayar << endl;
     cout << endl;
@@ -494,7 +494,7 @@ jam dt1,dt2,dt3;
     }
     cout << "\tNama kereta/train name                   : " << nama_kereta << endl;
     cout << "\tPeron                                    : " << peron_pilih << endl;
-    cout << "\tJam Keberangkatan/hours of derparture    : " << jam_keberangkatan << endl;
+    cout << "\tJam Keberangkatan/hours of derparture    : " << jam_berangkat << endl;
     cout << "\tJumlah Penumpang/total passenger         : " << jmlh_penumpang << endl;
     cout << "\tTotal Pembayaran/total payment           : " << jmlh_bayar << endl;
     cout << endl;
